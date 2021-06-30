@@ -26,6 +26,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 100px;
+  line-height: 110px;
 }
 
 .header__data {
@@ -162,7 +163,22 @@
 
 @media screen and (max-width: 769px) {
   .header {
-    height: 40vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-size: cover;
+  }
+
+  .header__name {
+    position: static;
+    font-size: 60px;
+  }
+
+  .header__data {
+    position: static;
+    font-size: 20px;
   }
 
   .form {
@@ -174,11 +190,23 @@
   .form__title {
     font-size: 25px;
   }
+
+  .form__subtitle {
+    font-size: 12px;
+  }
+
+  .form__checkbox {
+    font-size: 15px;
+  }
+
+  .form__input_string_name {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 426px) {
   .header {
-    height: 40vh;
+    height: 50vh;
   }
 
   .form {
