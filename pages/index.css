@@ -1,0 +1,192 @@
+.page {
+  font-family: 'Poiret One', 'HamiltoneG', Arial, sans-serif;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.header {
+  margin: 0 auto;
+  position: relative;
+  background-image: url(../images/Пара.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  height: 70vh;
+}
+
+.header__name {
+  position: absolute;
+  left: 200px;
+  top: 200px;
+  max-width: 350px;
+  font-family: 'HamiltoneG', Arial, sans-serif;
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.header__data {
+  position: absolute;
+  right: calc(100% / 3);;
+  top: 100px;
+  max-width: 350px;
+  font-family: 'Poiret One', Arial, sans-serif;
+  margin: 0;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.form {
+  max-width: calc(100% - 200px * 2);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__title {
+  font-family: 'Poiret One', Arial, sans-serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.form__subtitle {
+  font-family: 'Poiret One', Arial, sans-serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 15px;
+}
+
+.form__list {
+  margin: auto;
+  max-width: calc(100% - 130px * 2);
+  padding-left: 0;
+}
+
+.form__inputs {
+  font-family: 'Poiret One', Arial, sans-serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  text-align: end;
+  font-size: 20px;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__checkbox {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poiret One', Arial, sans-serif;
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.form__number {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  margin-bottom: 40px;
+}
+
+.form__input {
+  width: 20px;
+  height: 20px;
+}
+
+.form__input_string_name {
+  margin-left: 10px;
+  width: calc(100% / 2);
+  font-family: inherit;
+  height: 25px;
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+.form__button {
+  background-color: #2da2bd;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  font-family: "Poiret One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: opacity .3s ease-in;
+  margin-bottom: 100px;
+  justify-items: center;
+}
+
+.form__button_disabled {
+  opacity: .2;
+}
+
+@media screen and (max-width: 1300px) {
+  .header {
+    height: 50vh;
+  }
+
+  .form {
+    max-width: calc(100% - 100px * 2);
+}}
+
+@media screen and (max-width: 1000px) {
+  .form {
+    max-width: calc(100% - 20px * 2);
+}}
+
+@media screen and (max-width: 769px) {
+  .header {
+    height: 40vh;
+  }
+
+  .form {
+    max-width: 100%;
+}
+  .form__list {
+    max-width: calc(100% - 50px * 2);
+  }
+  .form__title {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .header {
+    height: 30vh;
+  }
+
+  .form {
+    max-width: 100%;
+}
+  .form__list {
+    max-width: calc(100% - 50px * 2);
+  }
+  .form__title {
+    font-size: 25px;
+  }
+}
