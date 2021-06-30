@@ -1,5 +1,5 @@
 const validationConfig = {
-  formSelector: '.form',
+  formSelector: '.form__container',
   inputSelector: '.form__input',
   submitButtonSelector: '.form__button',
   inactiveButtonClass: 'form__button_disabled'
