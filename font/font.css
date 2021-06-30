@@ -10,7 +10,9 @@
 @font-face {
   font-family: 'Poiret One';
   src: url(PoiretOne.woff2) format('woff2'),
-       url(PoiretOne.woff) format('woff');
+       url(PoiretOne.woff) format('woff'),
+       url(PoiretOne.ttf) format('truetype'),
+       url(PoiretOne.svg) format('svg');
        font-style: normal;
        font-weight: normal;
 }
