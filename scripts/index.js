@@ -74,15 +74,26 @@ button.addEventListener('submit', (evt) => {
   form.reset();
 });
 
-$.ajax({
-  url: "https://formspree.io/f/mnqlzzlk",
-  method: "POST",
-  dataType: "text/html",
-  data: {
-    email: "a.visitor@email.com",
-    message: "Hello!"
+document.addEventListener('DOMContentLoaded', function(){
+  const formElement = document.getElementById('form');
+  formElement.addEventListener('submit', formSend);
+
+  async function formSend(e) {
+    e.preventDefault();
+    let formData = new FormData(formElement);
+    let response = await fetch('sendmail.php', {
+      method: 'POST',
+      body: formData
+    });
+    if (response.ok) {
+      let result = await response.json();
+      alert(result.message);
+      formElement.reset();
+    } else {
+      alert('Ошибка');
+    }
   }
-});
+})
 
 
 
