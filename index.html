@@ -4,15 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>@import url('https://fonts.googleapis.com/css2? family = Poiret + One & display = swap'); </style>
   <link rel="stylesheet" href="./pages/index.css">
   <link rel="stylesheet" href="./vendor/font/font.css">
   <title>Свадьба Евгения и Натальи</title>
 </head>
 <body class="page">
   <header class="header">
-    <h1 class="header__name">Евгений и Наталья</h1>
-    <p class="header__data">17 июля 2021</p>
+    <!-- <h1 class="header__name">Евгений и Наталья</h1> -->
+    <!-- <p class="header__data">17 июля 2021</p> -->
   </header>
   <div class="form">
     <h2 class="form__title">Дорогие Гости, <br/>
@@ -23,7 +22,7 @@
       <ul class="form__list">
         <li class="form__number form__number_string_name">
           <h3 class="form__inputs"> 1. Имя:</h3>
-          <input type="text" class="form__input form__input_string_name" id="name" name="title" minlength="3" maxlength="20" required>
+          <input type="text" class="form__input form__input_string_name" id="name" name="name" minlength="2" maxlength="20" required>
         </li>
         <li class="form__number form__number_string_alcohol">
           <h3 class="form__inputs"> 2. Алкоголь:</h3>
@@ -33,7 +32,7 @@
             <label for="vodka"><input type="checkbox" class="form__input form__input_string_alcohol" id="vodka" name="alcohol" value="vodka"> Водка</label>
             <label for="whiskey"><input type="checkbox" class="form__input form__input_string_alcohol" id="whiskey" name="alcohol" value="whiskey"> Виски</label>
             <label for="cognac"><input type="checkbox" class="form__input form__input_string_alcohol" id="cognac" name="alcohol" value="cognac"> Коньяк</label>
-            <label for="no_alcohol"><input type="checkbox" class="form__input form__input_string_alcohol" id="no_alcohol" name="alcohol" value="no_alcohol"> Виски</label>
+            <label for="no_alcohol"><input type="checkbox" class="form__input form__input_string_alcohol" id="no_alcohol" name="alcohol" value="no_alcohol"> Не пью алкоголь</label>
           </div>
         </li>
         <li class="form__number form__number_string_hot_dish">
@@ -64,6 +63,7 @@
       <button class="form__button" aria-label="Отправить форму" type="submit"> Отправить </button>
     </form>
   </div>
-  <script type="module" src="scripts/index.js"></script>
+  <script type="module" src="scripts/index (1).js"></script>
+  <script type='text/javascript' src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
 </body>
 </html>
