@@ -19,7 +19,7 @@
 .header__name {
   position: absolute;
   left: calc(100% / 20);
-  top: calc(100% / 3);
+  top: calc(100% / 4);
   max-width: 550px;
   font-family: 'HamiltoneG', Arial, sans-serif;
   margin: 0;
