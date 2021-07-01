@@ -250,7 +250,7 @@
   }
 
   .header__data {
-    left: calc(100% / 20);
+    left: calc(100% / 10);
     bottom: calc(100% / 5);
     font-size: 17px;
   }
@@ -259,9 +259,10 @@
     max-width: 100%;
 }
   .form__list {
-    max-width: calc(100% - 50px * 2);
+    max-width: calc(100% - 20px * 2);
   }
   .form__title {
     font-size: 22px;
+    margin: 0 10px 10px;
   }
 }
