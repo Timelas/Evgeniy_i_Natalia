@@ -19,7 +19,7 @@
       для Вашего комфорта и нашего спокойствия <br/>
       просим Вас ответить на несколько важных вопросов*:</h2>
     <p class="form__subtitle">*заполняется отдельно для каждого гостя</p>
-    <form action="#" class="form__container" name="form" method="POST" novalidate action="https://formspree.io/lom.a.s@icloud.com">
+    <form action="#" class="form__container" name="form" id="form" method="POST" novalidate action="#">
       <ul class="form__list">
         <li class="form__number form__number_string_name">
           <h3 class="form__inputs"> 1. Имя:</h3>
@@ -64,6 +64,9 @@
       <button class="form__button" aria-label="Отправить форму" type="submit"> Отправить </button>
     </form>
   </div>
+  <?php
+  include 'sendmail.php';
+  ?>
   <script type="module" src="scripts/index.js"></script>
 </body>
 </html>
