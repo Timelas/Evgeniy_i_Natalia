@@ -1,5 +1,5 @@
 const formValid = {
-  nameValidity: true,
+  nameValidity: false,
   alcoholValidity : false,
   hotDishesValidity: false,
   garnirValidity: false,
@@ -70,7 +70,18 @@ isFormValid();
 
 button.addEventListener('submit', (evt) => {
   evt.preventDefault();
+  formInput.values;
   form.reset();
+});
+
+$.ajax({
+  url: "https://formspree.io/f/mnqlzzlk",
+  method: "POST",
+  dataType: "text/html",
+  data: {
+    email: "a.visitor@email.com",
+    message: "Hello!"
+  }
 });
 
 
