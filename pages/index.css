@@ -241,18 +241,18 @@
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 550px) {
   .header__name {
     left: calc(100% / 20);
     top: calc(100% / 5);
-    font-size: 40px;
+    font-size: 50px;
     line-height: 35px;
   }
 
   .header__data {
     left: calc(100% / 20);
     bottom: calc(100% / 5);
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .form {
