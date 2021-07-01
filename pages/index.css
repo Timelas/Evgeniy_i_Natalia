@@ -245,14 +245,14 @@
   .header__name {
     left: calc(100% / 20);
     top: calc(100% / 5);
-    font-size: 30px;
+    font-size: 40px;
     line-height: 35px;
   }
 
   .header__data {
     left: calc(100% / 20);
     bottom: calc(100% / 5);
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .form {
@@ -262,6 +262,6 @@
     max-width: calc(100% - 50px * 2);
   }
   .form__title {
-    font-size: 25px;
+    font-size: 22px;
   }
 }
