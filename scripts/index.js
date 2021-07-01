@@ -81,7 +81,8 @@ document.addEventListener('DOMContentLoaded', function(){
   async function formSend(e) {
     e.preventDefault();
     let formData = new FormData(formElement);
-    let response = await fetch('sendmail.php', {
+    if (isFormValid == true) {
+      let response = await fetch('sendmail.php', {
       method: 'POST',
       body: formData
     });
@@ -92,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function(){
     } else {
       alert('Ошибка');
     }
-  }
+  }}
 })
 
 
