@@ -252,7 +252,7 @@
   .header__data {
     left: calc(100% / 20);
     bottom: calc(100% / 5);
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .form {
